@@ -1,7 +1,5 @@
 package com.coderslab.workshop.model;
 
-import com.coderslab.workshop.dao.UserDao;
-
 public class User {
     private int id;
     private String username;
@@ -9,6 +7,13 @@ public class User {
     private String email;
 
     public User() {
+    }
+
+    public User(int id, String username, String password, String email) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.email = email;
     }
 
     public User(String username, String password, String email) {
